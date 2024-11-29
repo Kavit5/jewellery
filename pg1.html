@@ -1,0 +1,452 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="image/logo (2).jpeg" type="image/x-icon">
+        <title>
+                    PG
+                     
+               </title>
+<style>
+    a{
+        text-decoration:  none;
+    }
+    body{
+        background-image:url("blur2.jpeg") ;
+     background-size:cover;
+
+                z-index: 2;
+    }
+    .header{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:red;
+  }
+  .header-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: 1;
+  }
+  .header-content{
+    position:relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    font-size: x-large;
+        text-align: center;
+justify-content: center;
+align-items: center;
+color:crimson;
+padding-top: 0px;
+margin-right: 100px;
+animation: colorAnimation 2s linear infinite;
+  }
+  
+@keyframes colorAnimation {
+    0% {
+        color: #ff0000; /* Red */
+    }
+    25% {
+       color: #0000ff; /* Green */
+    }
+    50% {
+        color: #ff0000; /* Blue */
+    }
+    75% {
+    color: #0000ff; /* Yellow */
+    }
+    100% {
+        color: #ff0000; /* Red (back to start) */
+    }
+  }
+  
+  .logo{
+  width: 120px;
+    float: left;
+        max-height: 70px;
+        margin-left: 0px;
+                padding-top: 0px;
+                align-items: center;
+  }
+ 
+  .dropdownmenu ul,.dropdownmenu li{
+margin: 0;
+padding: 0;
+ }  
+.dropdownmenu ul{
+    background-color:black;
+    list-style: none;
+    width: 100%;
+}
+.dropdownmenu li{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.dropdownmenu a{
+    background:black;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size:20px;
+    font-family: sans-serif;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    padding-left: 93px;
+}
+.dropdownmenu li:hover a{
+background: #34495e;
+
+}
+#submenu{
+    text-align: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-decoration: none;
+visibility: hidden;
+font-style: oblique;
+}
+li:hover ul#submenu{
+    opacity: 1;
+text-align: center;
+visibility: visible;
+background: #34495e;
+}
+#menu{
+
+
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-decoration: none;
+visibility: hidden;
+font-style: oblique;
+}
+li:hover ul#menu{
+    
+    opacity: 1;
+text-align: center;
+visibility: visible;
+background: #34495e;
+
+}
+section h2{
+    padding-top: 70px;
+    font-size:50px;
+    text-align: center;
+    color:maroon;
+}
+.rainbow-text{
+    padding-top: 70px;
+    padding-left: 550px;
+    padding-bottom: 30px;
+font-family:arial black;
+font-size: 50px;
+background-image: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: move 80s linear infinite;
+}
+@keyframes move{
+    to{
+        background-position: 4500vh;
+    }
+}
+.syllabus-box{
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0, 0, 1);
+    margin: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    gap: 30px;
+width: 500px;
+transition-property: background-color;
+transition-duration: 1s;
+transition-delay: 0.5s;
+/* For safari browser */
+-webkit-transition-property: background-color;
+-webkit-transition-duration: 1s;
+-webkit-transition-delay: 0.5s;
+}
+.syllabus-box:hover{
+background-color:rgb(216, 159, 112);
+}
+
+.square{
+    display: flex;
+    gap:40px;
+    text-align: justify;
+    padding: 20px;
+    border: #333;
+    font-weight: 400;
+
+}
+.subject-box{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#fff;
+     background-color:orange;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0, 0, 1);
+    margin: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    gap: 30px;
+width: 500px;
+transition-property: background-color;
+transition-duration: 1s;
+transition-delay: 0.5s;
+/* For safari browser */
+-webkit-transition-property: background-color;
+-webkit-transition-duration: 1s;
+-webkit-transition-delay: 0.5s;
+}
+.subject-box:hover{
+    background-color:darkcyan;
+}
+.box{
+    display: flex;
+    gap:40px;
+    text-align: justify;
+    padding: 20px;
+    border: #333;
+    font-weight: 400;
+}
+.unit-box{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+       background-color:orange;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0, 0, 1);
+    margin: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    gap: 40px;
+width: 500px;
+transition-property: background-color;
+transition-duration: 1s;
+transition-delay: 0.5s;
+/* For safari browser */
+-webkit-transition-property: background-color;
+-webkit-transition-duration: 1s;
+-webkit-transition-delay: 0.5s;
+}
+.unit-box:hover{
+background-color:darkcyan;
+}
+
+
+.circle{
+    display: flex;
+    gap:40px;
+    text-align: justify;
+    padding: 40px;
+    border: #333;
+    font-weight: 400;
+}
+h4{
+    text-align: center;
+    color:#fff;
+    font-size:x-large;
+}
+footer{
+        background-color:#34495e;
+        color: #fff;
+        padding: 20px;
+        text-align: left;
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color:orange;
+    }
+    .footer-section{
+        flex: 1;
+        margin: 10px;
+    }
+    .footer-section h3{
+        margin-bottom: 15px;
+    }
+    .footer-section a{
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+   
+    .social-icons{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .social-icons a{
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    </style>
+        <body>
+            <header class="header">
+                <div class="header-bg"></div>
+                <div class="header-content">
+               <img src="image/logo (2).jpeg"  class="logo"target=_blank>
+        
+                  <h1>GOVERNMENT ARTS AND SCIENCE COLLEGE</h1>
+              
+        
+                </div>
+              
+        
+              </header>
+       
+        <nav class="dropdownmenu" >
+            <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="About.html"target="_blank">AboutUs</a></li>
+           <li><a href="#">Courses</a>
+          <ul id="submenu">
+            <li><a href="ug.html"target="_blank">UG</a></li>
+            <li><a href="pg.html"target="_blank">PG</a></li>
+          
+        </ul>  
+        </li>
+          <li><a href="Gallery.html"target="_blank">Gallery</a></li> 
+           <li><a href="Contact.html"target="_blank">Contact</a></li> 
+           <li><a href="#">Syllabus</a>
+          <ul id="menu">
+            <li><a href="ug1.html"target="_blank">UG</a></li>
+            <li><a href="pg1.html"target="_blank">PG</a></li> 
+        </ul>
+        </ul>
+    </li>
+        </nav>
+        <section>
+            
+                <div class="rainbow-text">
+                    PG COURSE
+                </div>
+       
+                     <div class="circle">
+                    <div class="unit-box">
+                        <h4>MA</h4>
+<ul>
+    <li> History</li>
+    <li> Literature</li>
+                            <li>Language Studies</li>
+                            <li> Composition Studies</li>
+                            <li> Linguistics</li>
+                            <li> Philosophy</li>
+</ul>
+                    </div>
+                    <div class="unit-box">
+                        <h4>MSc</h4>
+<ul>
+    <li>Chemistry</li>
+    <li>Maths</li>
+                            <li>Anatomy</li>
+                            <li>Biotechnology</li>
+                            <li> Physics </li>
+                            <li>Physiology</li>
+</ul>
+                    </div>
+                    <div class="unit-box">
+                        <h4>MCA</h4>
+<ul>
+    <li>Discrete Mathematical Structure </li>
+    <li>Computer Programming with C </li>
+                            <li>Database Management System</li>
+                            <li>Advanced Computer Architecture
+                            </li>
+                            <li>Software Engineering & TQM</li>
+                            <li>Unix and Shell Programming</li>
+</ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="subject-box">
+                        <h4>M.Tech</h4>
+<ul>
+    <li>Software Project Management</li>
+    <li>Internet Technology</li>
+                            <li>Intelligent Systems</li>
+                            <li>Service-Oriented Computing Web Technology</li>
+                            <li>Project Synopsis</li>
+                            <li>Mobile Computing</li>
+</ul>
+                    </div>
+                    <div class="subject-box">
+                        <h4>MBA</h4>
+<ul>
+    <li> Finance Management</li>
+    <li> Marketing Management</li>
+                            <li>Human Resource Management</li>
+                            <li> Business Analytics</li>
+                            <li>  IT Management </li>
+                            <li>Healthcare Management</li>
+</ul>
+                    </div>
+                    <div class="subject-box">
+                        <h4>MA English</h4>
+<ul>
+    <li> English Fiction I & II</li>
+    <li>The Study of Modern English</li>
+                            <li>The Structure of Modern English</li>
+                            <li>Literary Theory and Criticism
+                            </li>
+                            <li>Indian Literature in English I & II</li>
+                            <li>Literary Criticism I & II</li>
+</ul>
+                    </div>
+                    </div>
+        
+        </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d250787.70559257234!2d76.82548840001844!3d10.845105545543504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d11.0253686!2d76.9758268!4m5!1s0x3ba8379a528d287d%3A0x3811d913cc91e6d8!2spollachi%20government%20arts%20and%20science%20college!3m2!1d10.6654401!2d77.0144842!5e0!3m2!1sen!2sin!4v1725427262498!5m2!1sen!2sin" width="1500px" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="footer-container">
+<div class="footer-section">
+    <h3>QUICK LINKS</h3>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Course</a>
+    <a href="#">Gallery</a>
+    <a href="#">Admission</a>
+    <a href="#">Events</a>
+    <a href="#">Contact</a>
+</div>
+<div class="footer-section">
+    <h3>CONTACT</h3>
+    <a>Email:gasctmr@gmail.com</a>
+    <a>Contact:0422-2973111</a>
+    <a>Address:coimbatore-641109</a>
+</div>
+<div class="footer-section">
+    <h3>FOLLOW US</h3>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</div>
+</footer>
+ </body>
+    </head>
+</html>
